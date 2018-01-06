@@ -24,10 +24,11 @@ This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff
 # Inspiration
 
 [NASA Puffin Project](https://www.nasa.gov/topics/technology/features/puffin.html)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QSdwNl-9mPU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+[![NASA Puffin Video](https://theawesomer.com/photos/2010/01/012010_puffin_t.jpg)](https://www.youtube.com/embed/QSdwNl-9mPU "NASA Puffin Video")
 
 [Horizon Hobby's X-Vert](https://www.horizonhobby.com/x-vert-vtol-bnf-basic-efl1850)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wFXibbgNix8?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+[![X-Vert Video](https://hobbyohio.com/wp-content/uploads/2017/06/E-flite-X-VERT-VTOL-RTF-EFL1800-16.jpg)](https://www.youtube.com/embed/wFXibbgNix8 "X-Vert Video")
 
 # Airframe
 
