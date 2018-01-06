@@ -86,6 +86,10 @@ _Configuration_
 
 At this time, I see two physically seperate battery systems mid-wing behind and near each motor.  But they will be cross-linked in parallel throught the fuselage effectively make one large battery either motor system can feed from at will.
 
+_Future_
+
+Lithium Sulfer chemistry is very promising. It will likely double and potentially triple the specific energy density (grams per kwh).  That goes right to the range for a given weight of battery capacity.  With this technology minimally altered future version of the Vurtifly could fly for 2 hours with reserve and go 300 miles at very high altitudes and economy. 
+
 # Control
 
 This is a unique control system as it is both a motor-lift "quad-like" hover vehicle and an aircraft.  In horizontal flight it is similar to a twin-engine delta fixed wing aircraft.  In horizontal mode, the motors power output is dynamically controlled to directly control yaw by the flight computer.  The flaps on the tralin  
