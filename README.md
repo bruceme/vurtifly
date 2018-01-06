@@ -8,11 +8,37 @@ This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff
 # Goals
 
 * FAA Part-103 legal ultralight  
+  ** single-pilot / recreation
+  ** Less than 254 lbs empty
+  ** Less than 5-US Gal of fuel (18L of battery volume ~ 9kwh)
+  ** Less than 55 knots CAS
 * Vertical take-off and landing
 * Efficient horizontal flight capability 
 * Carry one 180-lb adult pilot
 * Fly for at least 30 minutes
 * At least 20 miles range
+
+## Part 103
+
+* Singlre
+This part prescribes rules governing the operation of ultralight vehicles
+  in the United States. For the purposes of this part, an ultralight vehicle
+  is a vehicle that:
+    (a) Is used or intended to be used for manned operation in the air by a
+        single occupant;
+    (b) Is used or intended to be used for recreation or sport purposes only;
+    (c) Does not have any U.S. or foreign airworthiness certificate; and
+    (d) If unpowered, weighs less than 155 pounds; or
+    (e) If powered:
+    (1) Weighs less than 254 pounds empty weight, excluding floats and safety
+        devices which are intended for deployment in a potentially catastrophic
+        situation;
+    (2) Has a fuel capacity not exceeding 5 U.S. gallons;
+    (3) Is not capable of more than 55 knots calibrated airspeed at full
+        power in level flight; and
+    (4) Has a power-off stall speed which does not exceed 24 knots calibrated
+        airspeed.
+
 
 # Inspiration
 
