@@ -1,11 +1,11 @@
-# vurtifly
+# VurtiFly
 Personal vertical transport
 
-## About
+# About
 
 This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff and landing) vehicle.
 
-## Goals
+# Goals
 
 * FAA Part-103 legal ultralight  
 * Vertical take-off and landing
@@ -14,13 +14,13 @@ This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff
 * Fly for at least 30 minutes
 * At least 20 miles range
 
-## Inspiration
+# Inspiration
 
 NASA Puffin Project
 
 Horizon Hobby's X-Vert
 
-## Airframe
+# Airframe
 
 I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I" proof of concept, I'd like to simply scale it up to human-size.  That about 800-900% scale.  By applying appropriate multiples (4x for area 9x for volume/weight) That "back of the envelope" wild-alt guess yeilds...
 
@@ -34,7 +34,7 @@ _Specification Approximation_
 | Wing Area | 7.8dm^2 | 54.4 sqft |
 
 
-## Motors / ESC
+# Motors / ESC
 
 Two 100v-45kw Brushless DC motors.  I'm targetting the smalled 30-55 KV for low RPM and high torque.
 The ESCs will be at least 500A and 120V capable.  
@@ -43,11 +43,11 @@ For both systems, I would like to avoid water cooling for simplicity of operatio
 
 _Safety Note:_  Eventually I'd like to incorporate a custom doable-wound motor with dual controllers per powerplant.  The most common failure mode involves the motor controller.
 
-## Propellor
+# Propellor
 
 Counter-rotating thin-blade composite propellors with a wide 60-70" diameter and small pitch of 30-50" will be most efficient for vertical lifting force and aid in limitting top-speed for part 103 in more efficient horizontal cruise.
 
-## Batteries
+# Batteries
 
 Batteries are everything!  I have a complex spreadsheet that given motor parameters helps select appropriate battery/cell and configuration.  Note: this is for _ONE_ powerplant, x2 for complete system.
 
@@ -63,7 +63,7 @@ _Configuration_
 
 At this time, I see two physically seperate battery systems mid-wing behind and near each motor.  But they will be cross-linked in parallel throught the fuselage effectively make one large battery either motor system can feed from at will.
 
-## Control
+# Control
 
 This is a unique control system as it is both a motor-lift "quad-like" hover vehicle and an aircraft.  In horizontal flight it is similar to a twin-engine delta fixed wing aircraft.  In horizontal mode, the motors power output is dynamically controlled to directly control yaw by the flight computer.  The flaps on the tralin  
 
@@ -72,28 +72,28 @@ There are four fundamental controls
 The two motors control overall thrust and yaw
 The two flap controls on the wing trailing edge are mixed in an "elevon" combined elevator & aeleron function.  This is a common control configuration for delta aircraft.  
 
-### The "Stick" (Input device)
+## The "Stick" (Input device)
 
 As a fly-by-wire, the input device is actually telling the flight-computer the pilot's "intent", not the exact input to any given control.  As such, it is entirely electronic.  The cockpit environment is also novel.  The pilot will be either standing upright on his/her feet or lying prone.  The flight-input and monitoring systems must work equally well in either orientation.
 
 My initial concept is to mix the helicopter system with the common quadcopter.  The pilot's right hand will be on a 3D flight stick mounted with teh bottom on the wing-plane.  The left hand will have a "collective-like" spring-centered "stick" to control up/down in vertical mode.
 
-### Strong Modality and mode-switch
+## Strong Modality and mode-switch
 
 Transitional modes (something between horizontal and vertical) have no advantage.  Using the X-Vert as a good example; it has binary horizontal or vertical mode toggle switch.  You are either in vertical or horizontal modes.  This switch will be gaurded.  Inadventent vertical to horizontal mode switch can be catestrophic as the flight controller assumes the pilot operator has cleared the space in-front of the vehicle for at least 500'.
 
-### Horizontal Mode
+## Horizontal Mode
 
 Horizontal mode is "classic-delta" with the addition of differential engine thrust directly controlling yaw.  This will be managed via the flight computer and not at the pilots direct control.
 
-### Vertical Mode
+## Vertical Mode
 
 In vertical mode, engine thrust controls altitude.  Differential engine thrust controls yaw.  The Elevons will continue to control pitch and roll, but pitch-angle controls lateral position relative to the wing-normal vector.  This will all be controlled by the pilot using forward and back motion on the control stick.  Yaw (laterlaly) will be done via the "rudder" (twist on the 3-axis control) function.  Roll function and input remain classic.  This may seem unintuitive to a classic rotory wing control.  But remember the conrol stick is actually vertical in teh vertical configuration.  These motions are intuiative in this orientation.
 
-## Balistic Parachute
+# Balistic Parachute
 
 A common Ultraligth Balistic Parachute system will be fitted to the top of the wing behind and near the pilot with embedded rip-out kevlar straps around and cradling the cockpit area similar to Cirrus.  This is a critical safety feature in case of catestrophic failure of the airframe, power or control systems.
 
-## Final Notes
+# Final Notes
 
 I created this help me keep my thoughts in one place and I find posting my research helps me pick up when I innevitably get distracted by another project.  This project does have significant importants and is a high priority in the long list of projects I have.  That said, I will likely lose track of it over time.  If you have any questions or want to know more, I invite you to reach out to me through comments on this repo.
