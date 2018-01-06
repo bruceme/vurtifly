@@ -1,6 +1,9 @@
 # VurtiFly
 Personal vertical transport
 
+![alt text](http://4.bp.blogspot.com/_kHK4gpOKyDU/SPdYxux833I/AAAAAAAAAnk/c6vQvXEPJ9I/s1600/birdman.jpg "VurtiFly man flying")
+
+
 # About
 
 This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff and landing) vehicle.
@@ -20,9 +23,11 @@ This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff
 
 # Inspiration
 
-NASA Puffin Project
+[NASA Puffin Project](https://www.nasa.gov/topics/technology/features/puffin.html)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QSdwNl-9mPU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-Horizon Hobby's X-Vert
+[Horizon Hobby's X-Vert](https://www.horizonhobby.com/x-vert-vtol-bnf-basic-efl1850)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wFXibbgNix8?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 # Airframe
 
