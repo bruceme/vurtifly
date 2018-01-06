@@ -31,7 +31,7 @@ This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff
 
 [![X-Vert Video](https://hobbyohio.com/wp-content/uploads/2017/06/E-flite-X-VERT-VTOL-RTF-EFL1800-16.jpg)](https://www.youtube.com/embed/wFXibbgNix8 "X-Vert Video")
 
-![Flying Pankcake](https://en.wikipedia.org/wiki/Vought_V-173#/media/File:Vought_V-173.jpg)
+![Flying Pancake](https://upload.wikimedia.org/wikipedia/commons/2/20/Vought_V-173.jpg "Flying Pancake")
 
 
 # Airframe
