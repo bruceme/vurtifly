@@ -24,7 +24,7 @@ Horizon Hobby's X-Vert
 
 I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I" proof of concept, I'd like to simply scale it up to human-size.  That about 800-900% scale.  By applying appropriate multiples (4x for area 9x for volume/weight) That "back of the envelope" wild-alt guess yeilds...
 
-_Specification Approximation_
+## Specification _Approximation_
 
 |           | X-Vert  | Vurtifly  |
 |-----------|---------|-----------|
@@ -33,6 +33,19 @@ _Specification Approximation_
 | Length    | 264mm   | 7.0 ft    |
 | Wing Area | 7.8dm^2 | 54.4 sqft |
 
+## Stress
+
+The flight controller will limit G-loading to 2Gs internally, the aiframe will be designed and stress tested to a relatively low 3Gs. This is a very low stress level and easy to achieve in a light-weight airframe.
+
+## Manufacture
+
+The simple "wide-delta" shape has two simplifying benefits;
+* Deltas have stable aerodynamic characteristics at extreme angles of attack.  This means it's much easier to control through horizontal to/from vertical transitions.
+* It is a structurally simple shape easy to make very stiff with simple stress calculations
+
+The airframe will be made by hot-wire-cutting EPS (Expanded Poly-Styrene) foam very similar to the popular Rutan aircraft.  A box-spar will be shaped to go under the pilot and contour to the wing as it taper into the engine mount structure mid-wing.  Common E-Glass fiberglass with aircraft-grade epoxy reason system will be used.  The entire surface of the airframe will have one or several layers of fiberglass to protect from handling damage and sustain any aerodynamic loads.
+
+A set of aerodynamic winglets add both aerodynamic efficiency and mechanically support the aircraft on the ground with strategic rubber re-enforced hard-points in the trailing edge of the winglets.
 
 # Motors / ESC
 
