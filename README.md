@@ -36,7 +36,7 @@ This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff
 
 # Airframe
 
-I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I" proof of concept, I'd like to simply scale it up to human-size.  That about 800-900% scale.  By applying appropriate multiples (4x for area 9x for volume/weight) That "back of the envelope" wild-alt guess yeilds...
+I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I" proof of concept, I'd like to simply scale it up to human-size.  That's about 800% scale.  By applying appropriate multiples (8^2 for area and 8^3 for volume/weight) That "back of the envelope" wild aeronautic guess yeilds...
 
 ## Specification _Approximation_
 
