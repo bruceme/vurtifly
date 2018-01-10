@@ -103,6 +103,22 @@ There are four fundamental controls
 The two motors control overall thrust and yaw
 The two flap controls on the wing trailing edge are mixed in an "elevon" combined elevator & aeleron function.  This is a common control configuration for delta aircraft.  
 
+Sources...
+
+There are two open source project candidates.
+
+[OpenAeroVTOL]<https://github.com/happyhappysundays/nextcopterplus/commit/02784085b381a2359091c0acee4d02fbc795061c>
+An open source VTOL controller project used by the NASA GL-10 _Greased Lightening_ project.  It runs on the KK controller
+
+[betaflight]<https://github.com/betaflight/betaflight>
+This is a fork of CleanFlight and is considered the latest and most feature rich.  It support VTOL and has active contributors. 
+
+and 
+
+[CleanFlight]<http://cleanflight.com/>
+CleanFlight is a generic quad controller that supports vtol.  It runs on many open controller board platforms.  It may go by the way side as BetaFlight picks up steam.
+
+
 ## The "Stick" (Input device)
 
 As a fly-by-wire, the input device is actually telling the flight-computer the pilot's "intent", not the exact input to any given control.  As such, it is entirely electronic.  The cockpit environment is also novel.  The pilot will be either standing upright on his/her feet or lying prone.  The flight-input and monitoring systems must work equally well in either orientation.
