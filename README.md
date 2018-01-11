@@ -54,7 +54,7 @@ The flight controller will limit G-loading to 2Gs internally, the aiframe will b
 ## Manufacture
 
 The simple "wide-delta" shape has two simplifying benefits;
-* Deltas have stable aerodynamic characteristics at extreme angles of attack.  This means it's much easier to control through horizontal to/from vertical transitions.
+* Deltas have stable aerodynamic characteristics at extreme angles of attack.  They are more stable through horizontal/vertical flight transition.
 * It is a structurally simple shape easy to make very stiff with simple stress calculations
 
 The airframe will be made by hot-wire-cutting EPS (Expanded Poly-Styrene) foam very similar to the popular Rutan aircraft.  A box-spar will be shaped to go under the pilot and contour to the wing as it taper into the engine mount structure mid-wing.  Common E-Glass fiberglass with aircraft-grade epoxy reason system will be used.  The entire surface of the airframe will have one or several layers of fiberglass to protect from handling damage and sustain any aerodynamic loads.
