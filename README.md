@@ -98,26 +98,22 @@ Lithium Sulfer chemistry is very promising. It will likely double and potentiall
 
 This is a unique control system as it is both a motor-lift "quad-like" hover vehicle and an aircraft.  In horizontal flight it is similar to a twin-engine delta fixed wing aircraft.  In horizontal mode, the motors power output is dynamically controlled to directly control yaw by the flight computer.  The flaps on the tralin  
 
-There are four fundamental controls
+##Four Controls
 
 The two motors control overall thrust and yaw
 The two flap controls on the wing trailing edge are mixed in an "elevon" combined elevator & aeleron function.  This is a common control configuration for delta aircraft.  
 
-Sources...
+##Flight Controller
 
-There are two open source project candidates.
+There are several good open source project to work from, but for now, I've narrowed it down to [betaflight]<https://github.com/betaflight/betaflight>
 
-[OpenAeroVTOL]<https://github.com/happyhappysundays/nextcopterplus/commit/02784085b381a2359091c0acee4d02fbc795061c>
-An open source VTOL controller project used by the NASA GL-10 _Greased Lightening_ project.  It runs on the KK controller
+This is a fork of CleanFlight and is considered the latest and most feature rich.  One of the out-of-the-box supported flight modes is called "bicopter".  It's two motors + 2 servos.  It's like they had me in mind, perfect!  When I hooked up and flashed my very basic 10-DoF Flip32+ controller I immediately got all 10-DoFs (3-acc, 3-gyro, 3-mag, 1-altitude).  Additionally I can add a GPS for stabalized position hold and navigation as well as a sonar for very accurate AGL hover-hold and potentially auto-landing.
 
-[betaflight]<https://github.com/betaflight/betaflight>
-This is a fork of CleanFlight and is considered the latest and most feature rich.  It support VTOL and has active contributors. 
+## You're Crazy!
 
-and 
+That could very well be, but... I think it can work and it's worth a shot and here's why.
 
-[CleanFlight]<http://cleanflight.com/>
-CleanFlight is a generic quad controller that supports vtol.  It runs on many open controller board platforms.  It may go by the way side as BetaFlight picks up steam.
-
+The PID Control Loop running in these cheap R/C controllers is actually state-of-the-art.  It has all the same sensors much more expensive controllers had 10 years ago, it's just smaller.  And finally, controlling something small is actually _MUCH_ harder than controlling something big.  Big things have mass. from F=M*A; re-orgnized A=F/M.  So accelleration is an inverse function of mass for a given amount of force.  If small thigns react faster, you have to correct those forces _MUCH_ faster.  So more mass, slower, easier, simpler; but all the same controls and there's no reason to believe this won't work, once I've adjusted the gains with initial flight testing.
 
 ## The "Stick" (Input device)
 
