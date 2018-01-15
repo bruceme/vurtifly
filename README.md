@@ -20,6 +20,7 @@ This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff
 * Carry one 180-lb adult pilot
 * Fly for at least 30 minutes
 * At least 20 miles range
+* Low-noise, neighbor friendly
 
 # Inspiration
 
@@ -74,6 +75,14 @@ _Safety Note:_  Eventually I'd like to incorporate a custom doable-wound motor w
 
 Counter-rotating thin-blade composite propellors with a wide 60-70" diameter and small pitch of 30-50" will be most efficient for vertical lifting force and aid in limitting top-speed for part 103 in more efficient horizontal cruise.
 
+With electric motors, the sole significant source of sound are the propellors.  
+* Longer blades
+* Fatter blades
+* Slow RPMs
+* Low-noise profiles
+
+!["Low noise props"](https://proxy.duckduckgo.com/iu/?u=http://www.nwuav.com/images/uav-propellers/TigersharkProp-rotated.jpg "low noise props")
+
 # Batteries
 
 Batteries are everything!  I have a complex spreadsheet that given motor parameters helps select appropriate battery/cell and configuration.  Note: this is for _ONE_ powerplant, x2 for complete system.
@@ -121,7 +130,7 @@ Fly-by-wire implies the pilot is not directly commanding any specific control.  
 
 As such, this system is entirely electronic.  The cockpit environment will be novel.  The pilot will be either standing upright on his/her feet or lying prone.  The flight-input and monitoring systems must work equally well in either orientation.
 
-![Prone pilot](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Frobotpig.net%2F_images%2Fposts%2Fpuffin_1.jpg&f=1 "Prone Pilot")
+![Prone pilot](http://robotpig.net/_images/posts/puffin_1.jpg "Prone Pilot")
 
 My initial concept is to mix the helicopter system with the common quadcopter.  The pilot's right hand will be on a 3D flight stick mounted with the bottom on the wing-plane.  The left hand will have a "collective-like" spring-centered "stick" to control up/down in vertical mode.
 
