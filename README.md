@@ -72,7 +72,8 @@ A set of winglets add both aerodynamic efficiency and landing skids.  The wingle
 
 # Motors / ESC
 
-Two 100v-45kw Brushless DC motors. Approx. 30-55 KV for low RPM and high torque.
+Two 45kw 100v 30kva Brushless DC motors.  For comparison there are manned multi-copter projects running 6-16 smaller motors usually adding up to ~70kw.  VurtiFly will likely weigh a bit more than those because of the aiframe, but I suspect the power is adequate for flight trials.
+
 The ESCs will be at least 500A and 120V capable.  
 
 For both systems, avoid complex water cooling, but limits continous high power 
