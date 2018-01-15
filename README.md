@@ -117,7 +117,9 @@ The PID Control Loop running in these cheap R/C controllers is actually state-of
 
 ## The "Stick" (Input device)
 
-As a fly-by-wire, the input device is actually telling the flight-computer the pilot's "intent", not the exact input to any given control.  As such, it is entirely electronic.  The cockpit environment is also novel.  The pilot will be either standing upright on his/her feet or lying prone.  The flight-input and monitoring systems must work equally well in either orientation.
+Fly-by-wire implies the pilot is not directly commanding any specific control.  A human pilot is incapable of manually controlling this complex set of inputs safely and with the speed it requires.  Instead a fast processor with attitude sensors is commanding the motors and flight surfaces.  The pilots role is to command the computer with his intent to direct the craft for safe operation.  These inputs will be intuitive using legacy flight paradigms like helicopters and aircraft.  But commanding will be simple "first order" inputs (go forward,left,right,up); not the exceedingly complex second and third order crossing-inputs common to rotorcraft and aircraft (pitch forward, yaw left, collective up/down).  This means learning to fly it will be trivial compared to rotorcraft and even aircraft.
+
+As such, this system is entirely electronic.  The cockpit environment will be novel.  The pilot will be either standing upright on his/her feet or lying prone.  The flight-input and monitoring systems must work equally well in either orientation.
 
 ![Prone pilot](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Frobotpig.net%2F_images%2Fposts%2Fpuffin_1.jpg&f=1 "Prone Pilot")
 
@@ -138,6 +140,14 @@ Horizontal mode is "classic-delta" with the addition of differential engine thru
 ## Vertical Mode
 
 In vertical mode, engine thrust controls altitude.  Differential engine thrust controls yaw.  The Elevons will continue to control pitch and roll, but pitch-angle controls lateral position relative to the wing-normal vector.  This will all be controlled by the pilot using forward and back motion on the control stick.  Yaw (laterlaly) will be done via the "rudder" (twist on the 3-axis control) function.  Roll function and input remain classic.  This may seem unintuitive to a classic rotory wing control.  But remember the conrol stick is actually vertical in teh vertical configuration.  These motions are intuiative in this orientation.
+
+## Holds and Navigation
+
+The flight controller had several stock modes that can be used to precisely position and navigate the VurtiFly. 
+
+* GPS Position - Hover hold at any altitude with accuracy within 10 meters.  Appropriate takeoff, hover and approach
+* GPS Heading & Altitude - Will hold a GPS heading and pressure altitude.  Enabled enroute navigation to a GPS destination from Navigation devices [Avare](https://apps4av.com/avare-overview)
+* Sonar Hold - Will hold better than a centimeter accurate sonar altitude at any height less than 1.5 meters.  Very useful for precise landings.  Will be used with hover to stabalize the last 1.5 meters for imperceptibly soft landings.
 
 # Safety Items
 
