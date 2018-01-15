@@ -78,8 +78,12 @@ Two 45kw 100v 30kva Brushless DC motors.
 
 Comprable "manned multi-copter" projects 
 
-8 x 8.5kw (2-cycle) => 68.8kw 
-6 x 3.75kw (bldc) => 60kw
+| Vehicle       | Motor Cnt | Power   | Total |
+|---------------|-----------|---------|-------|
+| 2-person bldc | 18        | 3.9 kw  | 70kw  |
+| 2-cyle        | 8         | 8.5 kw  | 68kw  |
+| bldc          | 16        | 3.7 kw  | 60kw  |
+| VultiFly      | 2         | 45 kw   | 90kw  |
 
 VurtiFly will likely weigh a bit more than those because of the aiframe, but I suspect the power is adequate for flight trials.
 
