@@ -31,8 +31,8 @@ This is a project to create an all-electric UL/VTOL (ultralight vertical takeoff
 
 [![X-Vert Video](https://hobbyohio.com/wp-content/uploads/2017/06/E-flite-X-VERT-VTOL-RTF-EFL1800-16.jpg)](https://www.youtube.com/embed/wFXibbgNix8 "X-Vert Video")
 
+Pancakes Anyone?
 ![Flying Pancake](https://upload.wikimedia.org/wikipedia/commons/2/20/Vought_V-173.jpg "Flying Pancake")
-
 
 # Airframe
 
@@ -54,12 +54,12 @@ The flight controller will limit G-loading to 2Gs internally, the aiframe will b
 ## Manufacture
 
 The simple "wide-delta" shape has two simplifying benefits;
-* Deltas have stable aerodynamic characteristics at extreme angles of attack.  They are more stable through horizontal/vertical flight transition.
-* It is a structurally simple shape easy to make very stiff with simple stress calculations
+* Deltas have stable aerodynamic characteristics at extreme angles of attack.  This makes it more stable and predictable through horizontal/vertical flight transition.
+* It is a structurally simple shape, easy to make very strong with well-known aircraft structures.
 
-The airframe will be made by hot-wire-cutting EPS (Expanded Poly-Styrene) foam very similar to the popular Rutan aircraft.  A box-spar will be shaped to go under the pilot and contour to the wing as it taper into the engine mount structure mid-wing.  Common E-Glass fiberglass with aircraft-grade epoxy reason system will be used.  The entire surface of the airframe will have one or several layers of fiberglass to protect from handling damage and sustain any aerodynamic loads.
+The airframe will be made by hot-wire-cutting XPS (Extruded Polystyrene or Styrofoam Fabrication Billets) foam very similar to the popular Rutan aircraft.  A box-spar will be shaped to go under the pilot and contour to the wing as it taper into the engine mount structure mid-wing.  Common E-Glass fiberglass with aircraft-grade epoxy reason system will be used.  The entire surface of the airframe will have one or several layers of fiberglass to protect from handling damage and sustain any aerodynamic loads.
 
-A set of aerodynamic winglets add both aerodynamic efficiency and mechanically support the aircraft on the ground with strategic rubber re-enforced hard-points in the trailing edge of the winglets.
+A set of winglets add both aerodynamic efficiency and landing skids.  The winglett trailing edge will have rubber pads and rollerblade wheels to allow the Vurtifly land solidly and facilitate ground handling. 
 
 # Motors / ESC
 
@@ -98,12 +98,12 @@ Lithium Sulfer chemistry is very promising. It will likely double and potentiall
 
 This is a unique control system as it is both a motor-lift "quad-like" hover vehicle and an aircraft.  In horizontal flight it is similar to a twin-engine delta fixed wing aircraft.  In horizontal mode, the motors power output is dynamically controlled to directly control yaw by the flight computer.  The flaps on the tralin  
 
-##Four Controls
+## Four Controls
 
 The two motors control overall thrust and yaw
 The two flap controls on the wing trailing edge are mixed in an "elevon" combined elevator & aeleron function.  This is a common control configuration for delta aircraft.  
 
-##Flight Controller
+## Flight Controller
 
 There are several good open source project to work from, but for now, I've narrowed it down to [betaflight]<https://github.com/betaflight/betaflight>
 
@@ -133,7 +133,38 @@ Horizontal mode is "classic-delta" with the addition of differential engine thru
 
 In vertical mode, engine thrust controls altitude.  Differential engine thrust controls yaw.  The Elevons will continue to control pitch and roll, but pitch-angle controls lateral position relative to the wing-normal vector.  This will all be controlled by the pilot using forward and back motion on the control stick.  Yaw (laterlaly) will be done via the "rudder" (twist on the 3-axis control) function.  Roll function and input remain classic.  This may seem unintuitive to a classic rotory wing control.  But remember the conrol stick is actually vertical in teh vertical configuration.  These motions are intuiative in this orientation.
 
-# Balistic Parachute
+# Safety Items
+
+## Future redundancy
+
+Brusheless electric motors are a foundational element of this design.   When correctly engineered, sized and tested for a given application they are oustandingly reliable. Unfortunately most failure modes are not gradual with obvious indications of imminent issues; failures are typically instantanious and complete.  For that reason redundency must be designed into the system accounting for common failures.
+
+Common failure modes;
+- Wiring continuity
+- Motor controller
+- Battery fire
+- Motor overheating
+- Servo
+- Flight controller
+- Bird/Prop Strike
+
+For all these reasons some level of redundancy should be considered.
+
+### Powerplant Redundancy
+
+The common BLDC / ESC have a rarely utilized design facet that enables obvious redundancy.  A "double wound" motor has two sets of coils to the same stator arms.  each winding set can have it's own independant (synchronized) motor controller.  You can operate that motor at full power on both and a slightly reduced power on either one.  Both controllers must be operating to initiate safe flight, but failure of either controller in flight will trip the master alarm and immediate landing is recomended.   But a safe precautionary landign can be accomplished on either controller with a limitted hover.  Continous high power hovering operation on one coil will result in overheating and eventual secondary system failure.
+
+The battery -> controller -> motor -> prop is the powerplant.  Both powerplants must be capable of producing minimal landing trust to conduct safe flight operations.  This is a more robust powerplant design that can accomidate motor controller and coil failure and some wiring failure modes.
+
+![Powerplant Design](https://docs.google.com/drawings/d/e/2PACX-1vRxgDvA9QpZh6BhW-pnYit-M7pkruSlULpIn0dItlDGl9pG5X4ds_HKExQzT472MQDzSj_qCs87GuR1/pub?w=622&amp;h=697 "Powerplant Design")
+
+### Servo redundancy
+
+Internally common servos is an arm, with reduction gears connected to a brushless motors with a small controller and using a position sensor.  I'd like to design a new dual redundent servo with shared mechanical hardware and redundant motor, sensors and controllers as these are the common failure modes in servos.  This is similar to the motor powerplant redundancy described above but for servo controller system. 
+
+## Balistic Parachute
+
+When all the redundency fails and there's no other option, some safe backup is still wise.
 
 A common Ultraligth Balistic Parachute system will be fitted to the top of the wing behind and near the pilot with embedded rip-out kevlar straps around and cradling the cockpit area similar to Cirrus.  This is a critical safety feature in case of catestrophic failure of the airframe, power or control systems.
 
