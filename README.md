@@ -60,6 +60,9 @@ The simple "wide-delta" shape has two simplifying benefits;
 
 The airframe will be made by hot-wire-cutting XPS (Extruded Polystyrene or Styrofoam Fabrication Billets) foam very similar to the popular Rutan aircraft.  A box-spar will be shaped to go under the pilot and contour to the wing as it taper into the engine mount structure mid-wing.  Common E-Glass fiberglass with aircraft-grade epoxy reason system will be used.  The entire surface of the airframe will have one or several layers of fiberglass to protect from handling damage and sustain any aerodynamic loads.
 
+The HS522 is a widely used low-moment airfoil seems appropriate, it's good general purpose high flying wing.
+![hs522](https://www.aerodesign.de/profile/hs522.gif)
+
 A set of winglets add both aerodynamic efficiency and landing skids.  The winglett trailing edge will have rubber pads and rollerblade wheels to allow the Vurtifly land solidly and facilitate ground handling. 
 
 # Motors / ESC
