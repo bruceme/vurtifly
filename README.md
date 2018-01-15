@@ -37,16 +37,19 @@ Pancakes Anyone?
 
 # Airframe
 
-I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I" proof of concept is X-Vert, scaled up to human-size.  That's about 800% scale.  By applying appropriate multiples (8^2 for area and 8^3 for volume/weight) That "back of the envelope" wild aeronautic guess yeilds...
+I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I" proof of concept is X-Vert, scaled up to human-size.  That's about 680% scale.  By applying appropriate multiples and calculating "back of the envelope" wild aeronautic guess yeilds...
 
 ## Specification _Approximation_
 
-|           | X-Vert  | Vurtifly  |
-|-----------|---------|-----------|
-| Weight    | 200g    | 225.8 lbs |
-| Span      | 504mm   | 13.3 ft   |
-| Length    | 264mm   | 7.0 ft    |
-| Wing Area | 7.8dm^2 | 54.4 sqft |
+|              | X-Vert  | Vurtifly       |
+|--------------|---------|----------------|
+| Weight       | 200g    | 225.8 lbs      |
+| Span         | 504mm   | 11.2 ft        |
+| Length       | 264mm   | 5.9 ft         |
+| Wing Area    | 7.8dm^2 | 42.2 sqft      |
+| Wing A/R     |         | 3.7:1          |
+| Wing Loading |         | 10.02 lbs/sqft |
+| Cabin width  |         | 2.4 ft         |
 
 ## Stress
 
