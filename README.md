@@ -75,13 +75,23 @@ _Safety Note:_  Eventually I'd like to incorporate a custom doable-wound motor w
 
 Counter-rotating thin-blade composite propellors with a wide 60-70" diameter and small pitch of 30-50" will be most efficient for vertical lifting force and aid in limitting top-speed for part 103 in more efficient horizontal cruise.
 
-With electric motors, the sole significant source of sound are the propellors.  
+If the aircraft makes too much noise, it will never have wide-spread use outside accepted noise-poluted locations.  I can't at this time call the VurtiFly "quiet" or even quieter, but I do know the only significant source of noise is the propellor.  The following atributes directly improve propellor noise generation;
 * Longer blades
+* Fewer blades
 * Fatter blades
-* Slow RPMs
+* Slower RPMs (tip speed)
 * Low-noise profiles
 
 !["Low noise props"](https://proxy.duckduckgo.com/iu/?u=http://www.nwuav.com/images/uav-propellers/TigersharkProp-rotated.jpg "low noise props")
+
+A counter ballanced and cantaleaved single bladed props can be longer, fatter and slower for noise abatement and efficient propulsion on smaller power applications. This was proven on the Alisport Silent-In.
+![single blade prop"](https://upload.wikimedia.org/wikipedia/commons/f/f1/Single-blade_propeller_drawing.gif "single blade prop")
+
+I don't believe any hovering aircraft can be "quiet" but it can be orders of magnitude quieter than legacy rotorcraft and other vertical flight systems.  Potentially this could drop bellow a threshold of reasonable announce for common uses.
+
+!["Posibilities"](/images/VurtiFly.jpg)
+
+If this problem can't be solved, VTOL will remain limitted to operating from the limitted/established airports and heliports.
 
 # Batteries
 
