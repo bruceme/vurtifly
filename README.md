@@ -51,7 +51,7 @@ I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I"
 | Wing Loading |         | 10.02 lbs/sqft |
 | Cabin width  |         | 2.4 ft         |
 
-![Dimensions](image/vurtiflydimensions.png)
+![Dimensions](image/VurtiFlyDimensions.png)
 
 ## Stress
 
