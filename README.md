@@ -51,6 +51,8 @@ I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I"
 | Wing Loading |         | 10.02 lbs/sqft |
 | Cabin width  |         | 2.4 ft         |
 
+![Dimensions](image/vurtiflydimensions.png)
+
 ## Stress
 
 The flight controller will limit G-loading to 2Gs internally, the aiframe will be designed and stress tested to a relatively low 3Gs. This is a very low stress level and easy to achieve in a light-weight airframe.
