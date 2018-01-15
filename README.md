@@ -89,7 +89,7 @@ A counter ballanced and cantaleaved single bladed props can be longer, fatter an
 
 I don't believe any hovering aircraft can be "quiet" but it can be orders of magnitude quieter than legacy rotorcraft and other vertical flight systems.  Potentially this could drop bellow a threshold of reasonable announce for common uses.
 
-!["Posibilities"](/images/VurtiFly.jpg)
+!["Posibilities"](/image/VTOLFuture.jpg)
 
 If this problem can't be solved, VTOL will remain limitted to operating from the limitted/established airports and heliports.
 
