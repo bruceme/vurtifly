@@ -170,7 +170,7 @@ When all the redundencies fail and options eliminate quickly, a zero-altitude pa
 
 A common Ultraligth Balistic Parachute system will be fitted to the top of the wing behind and near the pilot with embedded rip-out kevlar straps around and cradling the cockpit area similar to Cirrus.  This is a critical safety feature in case of catestrophic failure of the airframe, power or control systems.
 
-Optionally battery ejection with the parachute deployment should be considered in case of battery fires as well.
+In case of battery fires, a second "dual-handle" will eject the batteries.
 
 # Final Notes
 
