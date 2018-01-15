@@ -37,16 +37,21 @@ Pancakes Anyone?
 
 # Airframe
 
-I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I" proof of concept, I'd like to simply scale it up to human-size.  That's about 800% scale.  By applying appropriate multiples (8^2 for area and 8^3 for volume/weight) That "back of the envelope" wild aeronautic guess yeilds...
+I'm more impressed with the practical capabilities of the X-Vert.  For my "Mk-I" proof of concept is X-Vert, scaled up to human-size.  That's about 680% scale.  By applying appropriate multiples and calculating "back of the envelope" wild aeronautic guess yeilds...
 
 ## Specification _Approximation_
 
-|           | X-Vert  | Vurtifly  |
-|-----------|---------|-----------|
-| Weight    | 200g    | 225.8 lbs |
-| Span      | 504mm   | 13.3 ft   |
-| Length    | 264mm   | 7.0 ft    |
-| Wing Area | 7.8dm^2 | 54.4 sqft |
+|              | X-Vert  | Vurtifly       |
+|--------------|---------|----------------|
+| Weight       | 200g    | 225.8 lbs      |
+| Span         | 504mm   | 11.2 ft        |
+| Length       | 264mm   | 5.9 ft         |
+| Wing Area    | 7.8dm^2 | 42.2 sqft      |
+| Wing A/R     |         | 3.7:1          |
+| Wing Loading |         | 10.02 lbs/sqft |
+| Cabin width  |         | 2.4 ft         |
+
+![Dimensions](image/vurtiflydimensions.png)
 
 ## Stress
 
@@ -60,22 +65,23 @@ The simple "wide-delta" shape has two simplifying benefits;
 
 The airframe will be made by hot-wire-cutting XPS (Extruded Polystyrene or Styrofoam Fabrication Billets) foam very similar to the popular Rutan aircraft.  A box-spar will be shaped to go under the pilot and contour to the wing as it taper into the engine mount structure mid-wing.  Common E-Glass fiberglass with aircraft-grade epoxy reason system will be used.  The entire surface of the airframe will have one or several layers of fiberglass to protect from handling damage and sustain any aerodynamic loads.
 
+The HS522 is a widely used low-moment airfoil seems appropriate, it's good general purpose high flying wing.
+![hs522](https://www.aerodesign.de/profile/hs522.gif)
+
 A set of winglets add both aerodynamic efficiency and landing skids.  The winglett trailing edge will have rubber pads and rollerblade wheels to allow the Vurtifly land solidly and facilitate ground handling. 
 
 # Motors / ESC
 
-Two 100v-45kw Brushless DC motors.  I'm targetting the smalled 30-55 KV for low RPM and high torque.
+Two 100v-45kw Brushless DC motors. Approx. 30-55 KV for low RPM and high torque.
 The ESCs will be at least 500A and 120V capable.  
 
-For both systems, I would like to avoid water cooling for simplicity of operation.
-
-_Safety Note:_  Eventually I'd like to incorporate a custom doable-wound motor with dual controllers per powerplant.  The most common failure mode involves the motor controller.
+For both systems, avoid complex water cooling, but limits continous high power 
 
 # Propellor
 
 Counter-rotating thin-blade composite propellors with a wide 60-70" diameter and small pitch of 30-50" will be most efficient for vertical lifting force and aid in limitting top-speed for part 103 in more efficient horizontal cruise.
 
-If the aircraft makes too much noise, it will never have wide-spread use outside accepted noise-poluted locations.  I can't at this time call the VurtiFly "quiet" or even quieter, but I do know the only significant source of noise is the propellor.  The following atributes directly improve propellor noise generation;
+If the aircraft makes too much noise, it will never have wide-spread use outside accepted noise-poluted locations.  The following atributes directly improve propellor noise generation;
 * Longer blades
 * Fewer blades
 * Fatter blades
@@ -89,13 +95,13 @@ A counter ballanced and cantaleaved single bladed props can be longer, fatter an
 
 I don't believe any hovering aircraft can be "quiet" but it can be orders of magnitude quieter than legacy rotorcraft and other vertical flight systems.  Potentially this could drop bellow a threshold of reasonable announce for common uses.
 
-!["Posibilities"](/images/VurtiFly.jpg)
+!["Posibilities"](/image/VTOLFuture.jpg)
 
 If this problem can't be solved, VTOL will remain limitted to operating from the limitted/established airports and heliports.
 
 # Batteries
 
-Batteries are everything!  I have a complex spreadsheet that given motor parameters helps select appropriate battery/cell and configuration.  Note: this is for _ONE_ powerplant, x2 for complete system.
+Batteries are everything!  Given motor parameters, this complex spreadsheet helps select appropriate battery/cell and configuration.  Note: this is for _ONE_ powerplant, x2 for complete system.
 
 | Name                                | Nominal V | Current Cap | Capacity | Volume | mass | cost    | Max Disch | Cont Disch | S | P  | Cell Count | Volume | Nominal | Kwh | mass | cost      | Max Disch | Cont Disch | Specifc Energy |
 |-------------------------------------|-----------|-------------|----------|--------|------|---------|-----------|------------|---|----|------------|--------|---------|-----|------|-----------|-----------|------------|----------------|
@@ -107,7 +113,7 @@ Batteries are everything!  I have a complex spreadsheet that given motor paramet
 
 _Configuration_
 
-At this time, I see two physically seperate battery systems mid-wing behind and near each motor.  But they will be cross-linked in parallel throught the fuselage effectively make one large battery either motor system can feed from at will.
+Two physically seperate battery systems mid-wing behind and near each motor.  But they will be cross-linked in parallel throught the fuselage effectively make one large battery either motor system can feed from at will.
 
 _Future_
 
@@ -126,11 +132,11 @@ The two flap controls on the wing trailing edge are mixed in an "elevon" combine
 
 There are several good open source project to work from, but for now, I've narrowed it down to [betaflight](https://github.com/betaflight/betaflight)
 
-This is a fork of CleanFlight and is considered the latest and most feature rich.  One of the out-of-the-box supported flight modes is called "bicopter".  It's two motors + 2 servos.  It's like they had me in mind, perfect!  When I hooked up and flashed my very basic 10-DoF Flip32+ controller I immediately got all 10-DoFs (3-acc, 3-gyro, 3-mag, 1-altitude).  Additionally I can add a GPS for stabalized position hold and navigation as well as a sonar for very accurate AGL hover-hold and potentially auto-landing.
+This is a fork of CleanFlight and is considered the latest and most feature rich.  One of the out-of-the-box supported flight modes is called "bicopter".  It's two motors + 2 servos.  Flashed a basic 10-DoF Flip32+ controller immediately got all 10-DoFs (3-acc, 3-gyro, 3-mag, 1-altitude) to work and calibrate.  Additionally a GPS can be added for stabalized position hold and navigation as well as a sonar for very accurate AGL hover-hold and potentially auto-landing.
 
 ## You're Crazy!
 
-That could very well be, but... I think it can work and it's worth a shot and here's why.
+That could very well be, but... why not, it's worth a shot and here's why.
 
 The PID Control Loop running in these cheap R/C controllers is actually state-of-the-art.  It has all the same sensors much more expensive controllers had 10 years ago, it's just smaller.  And finally, controlling something small is actually _MUCH_ harder than controlling something big.  Big things have mass. from F=M*A; re-orgnized A=F/M.  So accelleration is an inverse function of mass for a given amount of force.  If small thigns react faster, you have to correct those forces _MUCH_ faster.  So more mass, slower, easier, simpler; but all the same controls and there's no reason to believe this won't work, once I've adjusted the gains with initial flight testing.
 
@@ -148,7 +154,7 @@ My initial concept is to mix the helicopter system with the common quadcopter.  
 
 Transitional modes (something between horizontal and vertical) have no advantages.  Using the X-Vert as a good example; it has binary horizontal or vertical mode toggle switch.  You are either in vertical or horizontal modes.  This switch will be gaurded.  Inadventent hover to forward-flight mode switch can be catestrophic as the flight controller assumes the pilot operator has cleared the space in-front of the vehicle for five hundred feet or more.
 
-Some videos of the X-Vert show it dropping while transitioning from hover to forward-flight modes.  This concerns me.  I don't think it's the flight controller.  I believe the pilot's input is rapidly changing purpose.  In hover mode, the forward stick is "cyclic" or "traverse foreward".  In flight-mode that same input means "dive".  So the craft is instantly switching from hover to flight and an incipient "dive" is inadvertently commanded while the pilot's head catches up to the modality switch.  I'd like to experiment with ways to gradually fade the controls from hover to forward-flight so this effect is less dramatic and the pilot can easily stay ahead of it.  Ideally normal operations hover to forward transitions would actually be made in an intentional climb for ground obstacle avoidance.
+Some videos of the X-Vert show it dropping while transitioning from hover to forward-flight modes.  This is concerning.  It doesn't appear to be the flight controller.  The pilot's input is too rapidly changing purpose.  In hover mode, the forward stick is "cyclic" or "traverse foreward".  In flight-mode that same input means "dive".  So the craft is instantly switching from hover to flight and an incipient "dive" is inadvertently commanded while the pilot's head catches up to the modality switch.  Gradually fading the controls from hover to forward-flight will give the pilot the ability to stay ahead of it.  Ideally normal operations hover to forward transitions would actually be made in an intentional climb for ground obstacle avoidance.
 
 For all the reasons stated above, artificially inserting a mandatory modest climb in the hover to forward transition may be a wise safety precation.
 
@@ -195,7 +201,7 @@ The battery -> controller -> motor -> prop is the powerplant.  Both powerplants 
 
 ### Servo redundancy
 
-Internally servos are comprised of a set of reduction gears connected to a brushless motors with a small controller and using a position sensor.  I'd like to design a new dual redundent servo with shared mechanical hardware and redundant motor, sensors and controllers as these are the common failure modes in servos.  This is similar to the motor powerplant redundancy described above but for servo controller system. 
+Internally servos are comprised of a set of reduction gears connected to a brushless motors with a small controller and using a position sensor.  A novel dual redundent servo can be fabricated that shared mechanical hardware and redundant motor, sensors and controllers as these are the common failure modes in servos.  This is similar to the motor powerplant redundancy described above but for servo controller system. 
 
 ![Servo cross section](https://i0.wp.com/www.icrobotics.co.uk/wiki/images/1/19/Servo_Stripped.jpg "Servo Cross Section")
 
@@ -207,6 +213,6 @@ A common Ultraligth Balistic Parachute system will be fitted to the top of the w
 
 In case of battery fires, a second "dual-handle" will eject the batteries.
 
-# Final Notes
+# Final Notes from the Author
 
-I created this help me keep my thoughts in one place and I find posting my research helps me pick up when I innevitably get distracted by another project.  This project does have significant importants and is a high priority in the long list of projects I have.  That said, I will likely lose track of it over time.  If you have any questions or want to know more, I invite you to reach out to me through comments on this repo.
+I created this page to help me gather my thoughts in one place and find a home for all my research.  So when I innevitably get distracted by another project, I can pickup from this spot quickly.  This project does have significant importants and is a high priority in the long list of projects I have.  That said, I will likely lose track of it over time.  If you have any questions or want to know more, I invite you to reach out to me through comments on this repo.
