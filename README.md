@@ -68,11 +68,20 @@ The airframe will be made by hot-wire-cutting XPS (Extruded Polystyrene or Styro
 The HS522 is a widely used low-moment airfoil seems appropriate, it's good general purpose high flying wing.
 ![hs522](https://www.aerodesign.de/profile/hs522.gif)
 
+[Low Moment Airfoils](https://www.aerodesign.de/english/profile/profile_s.htm#hs522)
+
 A set of winglets add both aerodynamic efficiency and landing skids.  The winglett trailing edge will have rubber pads and rollerblade wheels to allow the Vurtifly land solidly and facilitate ground handling. 
 
 # Motors / ESC
 
-Two 45kw 100v 30kva Brushless DC motors.  For comparison there are manned multi-copter projects running 6-16 smaller motors usually adding up to ~70kw.  VurtiFly will likely weigh a bit more than those because of the aiframe, but I suspect the power is adequate for flight trials.
+Two 45kw 100v 30kva Brushless DC motors.  
+
+Comprable "manned multi-copter" projects 
+
+8 x 8.5kw (2-cycle) => 68.8kw 
+6 x 3.75kw (bldc) => 60kw
+
+VurtiFly will likely weigh a bit more than those because of the aiframe, but I suspect the power is adequate for flight trials.
 
 The ESCs will be at least 500A and 120V capable.  
 
