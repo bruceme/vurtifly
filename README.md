@@ -119,11 +119,17 @@ The PID Control Loop running in these cheap R/C controllers is actually state-of
 
 As a fly-by-wire, the input device is actually telling the flight-computer the pilot's "intent", not the exact input to any given control.  As such, it is entirely electronic.  The cockpit environment is also novel.  The pilot will be either standing upright on his/her feet or lying prone.  The flight-input and monitoring systems must work equally well in either orientation.
 
-My initial concept is to mix the helicopter system with the common quadcopter.  The pilot's right hand will be on a 3D flight stick mounted with teh bottom on the wing-plane.  The left hand will have a "collective-like" spring-centered "stick" to control up/down in vertical mode.
+![Prone pilot](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Frobotpig.net%2F_images%2Fposts%2Fpuffin_1.jpg&f=1 "Prone Pilot")
+
+My initial concept is to mix the helicopter system with the common quadcopter.  The pilot's right hand will be on a 3D flight stick mounted with the bottom on the wing-plane.  The left hand will have a "collective-like" spring-centered "stick" to control up/down in vertical mode.
 
 ## Strong Modality and mode-switch
 
-Transitional modes (something between horizontal and vertical) have no advantage.  Using the X-Vert as a good example; it has binary horizontal or vertical mode toggle switch.  You are either in vertical or horizontal modes.  This switch will be gaurded.  Inadventent vertical to horizontal mode switch can be catestrophic as the flight controller assumes the pilot operator has cleared the space in-front of the vehicle for at least 500'.
+Transitional modes (something between horizontal and vertical) have no advantages.  Using the X-Vert as a good example; it has binary horizontal or vertical mode toggle switch.  You are either in vertical or horizontal modes.  This switch will be gaurded.  Inadventent hover to forward-flight mode switch can be catestrophic as the flight controller assumes the pilot operator has cleared the space in-front of the vehicle for five hundred feet or more.
+
+Some videos of the X-Vert show it dropping while transitioning from hover to forward-flight modes.  This concerns me.  I don't think it's the flight controller.  I believe the pilot's input is rapidly changing purpose.  In hover mode, the forward stick is "cyclic" or "traverse foreward".  In flight-mode that same input means "dive".  So the craft is instantly switching from hover to flight and an incipient "dive" is inadvertently commanded while the pilot's head catches up to the modality switch.  I'd like to experiment with ways to gradually fade the controls from hover to forward-flight so this effect is less dramatic and the pilot can easily stay ahead of it.  Ideally normal operations hover to forward transitions would actually be made in an intentional climb for ground obstacle avoidance.
+
+For all the reasons stated above, artificially inserting a mandatory modest climb in the hover to forward transition may be a wise safety precation.
 
 ## Horizontal Mode
 
