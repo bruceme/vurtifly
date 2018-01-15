@@ -105,7 +105,7 @@ The two flap controls on the wing trailing edge are mixed in an "elevon" combine
 
 ## Flight Controller
 
-There are several good open source project to work from, but for now, I've narrowed it down to [betaflight]<https://github.com/betaflight/betaflight>
+There are several good open source project to work from, but for now, I've narrowed it down to [betaflight](https://github.com/betaflight/betaflight)
 
 This is a fork of CleanFlight and is considered the latest and most feature rich.  One of the out-of-the-box supported flight modes is called "bicopter".  It's two motors + 2 servos.  It's like they had me in mind, perfect!  When I hooked up and flashed my very basic 10-DoF Flip32+ controller I immediately got all 10-DoFs (3-acc, 3-gyro, 3-mag, 1-altitude).  Additionally I can add a GPS for stabalized position hold and navigation as well as a sonar for very accurate AGL hover-hold and potentially auto-landing.
 
@@ -160,13 +160,17 @@ The battery -> controller -> motor -> prop is the powerplant.  Both powerplants 
 
 ### Servo redundancy
 
-Internally common servos is an arm, with reduction gears connected to a brushless motors with a small controller and using a position sensor.  I'd like to design a new dual redundent servo with shared mechanical hardware and redundant motor, sensors and controllers as these are the common failure modes in servos.  This is similar to the motor powerplant redundancy described above but for servo controller system. 
+Internally servos are comprised of a set of reduction gears connected to a brushless motors with a small controller and using a position sensor.  I'd like to design a new dual redundent servo with shared mechanical hardware and redundant motor, sensors and controllers as these are the common failure modes in servos.  This is similar to the motor powerplant redundancy described above but for servo controller system. 
+
+![Servo cross section](https://i0.wp.com/www.icrobotics.co.uk/wiki/images/1/19/Servo_Stripped.jpg "Servo Cross Section")
 
 ## Balistic Parachute
 
-When all the redundency fails and there's no other option, some safe backup is still wise.
+When all the redundencies fail and options eliminate quickly, a zero-altitude parachute is wise.
 
 A common Ultraligth Balistic Parachute system will be fitted to the top of the wing behind and near the pilot with embedded rip-out kevlar straps around and cradling the cockpit area similar to Cirrus.  This is a critical safety feature in case of catestrophic failure of the airframe, power or control systems.
+
+Optionally battery ejection with the parachute deployment should be considered in case of battery fires as well.
 
 # Final Notes
 
