@@ -158,13 +158,19 @@ The PID Control Loop running in these cheap R/C controllers is actually state-of
 
 ## The "Stick" (Input device)
 
-Fly-by-wire implies the pilot is not directly commanding any specific control.  A human pilot is incapable of manually controlling this complex set of inputs safely and with the speed it requires.  Instead a fast processor with attitude sensors is commanding the motors and flight surfaces.  The pilots role is to command the computer with his intent to direct the craft for safe operation.  These inputs will be intuitive using legacy flight paradigms like helicopters and aircraft.  But commanding will be simple "first order" inputs (go forward,left,right,up); not the exceedingly complex second and third order crossing-inputs common to rotorcraft and aircraft (pitch forward, yaw left, collective up/down).  This means learning to fly it will be trivial compared to rotorcraft and even aircraft.
+Fly-by-wire implies the pilot is not directly commanding any specific control.  A human pilot is incapable of manually controlling this complex set of inputs safely and with the frequency required.  Instead a fast processor with attitude sensors is driving the motors and flight surface servos.  The pilot's role is to command the computer with his intent to direct the craft for safe operation.  
 
-As such, this system is entirely electronic.  The cockpit environment will be novel.  The pilot will be either standing upright on his/her feet or lying prone.  The flight-input and monitoring systems must work equally well in either orientation.
+* Hands-Off, the flight control system will maintain position stability.
+* All commanding will be "first order" inputs (go forward,left,right,up).
+* Learning to fly will be trivial compared to rotorcraft and even aircraft.  
+
+Learn to fly can be done using common simulators and even toy quadcopters.  It's as easy as pointing where you want to go. The flight computer does everything else.
 
 ![Prone pilot](http://robotpig.net/_images/posts/puffin_1.jpg "Prone Pilot")
 
-My initial concept is to mix the helicopter system with the common quadcopter.  The pilot's right hand will be on a 3D flight stick mounted with the bottom on the wing-plane.  The left hand will have a "collective-like" spring-centered "stick" to control up/down in vertical mode.
+The cockpit environment will be novel.  The pilot will be either standing upright on his/her feet for vertical flight or lying prone in horizontal flight.  The pilot seat, harness, flight-input and monitoring systems must work equally well in either orientation.
+
+All controls for manuvering are in the pilot's right hand and will use a twisting 3D flight stick.  The stick will allow the pilot to control pitch, roll, yaw and vertical.  Pitch & Roll are legacy inputs, yaw is a twisting motion and a switch on the top of the joystick will command the vertical speed. In vertical flight push up to takeoff and climb, down to descent and land.
 
 ## Strong Modality and mode-switch
 
