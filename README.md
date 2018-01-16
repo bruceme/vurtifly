@@ -142,7 +142,7 @@ This is a unique control system as it is both a motor-lift "quad-like" hover veh
 The two motors control overall thrust and yaw
 The two flap controls on the wing trailing edge are mixed in an "elevon" combined elevator & aeleron function.  This is a common control configuration for delta aircraft.  
 
-![Controls](https://docs.google.com/drawings/d/e/2PACX-1vSzSd0mkoIKGPKtUMFEICpF14WNwzhEXrsAKwn-jI-TWZm98ad3sqDO8jWlUhccUvx0IHGHuI7_t_Cd/pub?w=960&amp;h=720)
+![Controls](https://docs.google.com/drawings/d/e/2PACX-1vSzSd0mkoIKGPKtUMFEICpF14WNwzhEXrsAKwn-jI-TWZm98ad3sqDO8jWlUhccUvx0IHGHuI7_t_Cd/pub?w=473&h=315)
 
 ## Flight Controller
 
